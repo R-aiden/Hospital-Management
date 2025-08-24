@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Novamed Hospital</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; color: #333; background: #f0f4f8; line-height: 1.6; }
+    
+    a.my-button {
+      background: linear-gradient(45deg, #28a745, #20c997);	
+      color: white;
+      padding: 15px 30px;
+      margin-right:5px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+      }
+      a.my-button:hover {
+  background: linear-gradient(45deg, #1e7e34, #17a589); /* darker green shades */
+  transition: background 0.3s ease;
+}
+    
+    header {
+      background: #007bff;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 0 0 20px 20px;
+    }
+    header img { height: 100px; }
+
+    .hero {
+      background: linear-gradient(to right, #20c997, #007bff);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero h1 { font-size: 3em; margin-bottom: 20px; }
+    .hero p { font-size: 1.2em; margin-bottom: 15px; }
+
+    section {
+      padding: 40px 20px;
+      margin: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+    section h2 {
+      color: #20c997;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .inside-images {
+      display: flex;
+      gap: 17px;
+      flex-wrap: wrap;
+    }
+    .inside-images img {
+      flex: 1 1 calc(40% - 12px);
+      max-width: 24%;
+      border-radius: 8px;
+      height: auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .inside-images { flex-direction: column; }
+      .inside-images img { flex: 1 1 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="C:\Users\chava\Desktop\csc project resources\logo2.jpg" alt="Hospital Logo" width = "100" height = "100">
+    <div style="flex: 1"></div>
+    <a href="http://localhost:5000/open_main_menu" class="my-button">Main Menu</a>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to NOVAMED Hospital</h1>
+    <p>Your health, our priority—always.</p>
+    <p>State-of-the-art care, friendly staff, and advanced facilities.</p>
+    <a href="#specialties" class="my-button">Explore Our Services</a>
+  </section>
+
+  <section>
+    <h2>Images</h2>
+    <div class="inside-images">
+      <img src="C:\Users\chava\Desktop\csc project resources\ward.jpg" alt="Ward">
+      <img src="C:\Users\chava\Desktop\csc project resources\or.jpg" alt="Operating Room">
+      <img src="C:\Users\chava\Desktop\csc project resources\care.jpg" alt="Patient Care">
+      <img src="C:\Users\chava\Desktop\csc project resources\room.jpg" alt="General Room">
+  </div>
+  </section>
+
+  <section>
+    <h2>About Our Hospital</h2>
+    <p>Delivering exceptional care with empathy, innovation, and dedication. Whether you’re visiting for wellness, treatment, or consultation—every moment of care is tailored for you.</p>
+  </section>
+
+  <section id="specialties">
+    <h2>Our Specialities</h2>
+    <ul style="list-style:none; padding:0; text-align:center; color:#555;">
+      <li>Cardiology • Pediatrics • Neurology</li>
+      <li>Emergency Care • Diagnostics • Outpatient Services</li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 NOVAMED Hospital. Compassionate care for all.
+  </footer>
+
+</body>
+</html>
